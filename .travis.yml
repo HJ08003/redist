@@ -24,4 +24,4 @@ notifications:
     on_success: change
     on_failure: change
 
-os: solaris
+os: linux
