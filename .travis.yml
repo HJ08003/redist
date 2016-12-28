@@ -13,7 +13,9 @@ compiler:
 before_install:
   - curl -OL http://raw.github.com/craigcitro/r-travis/master/scripts/travis-tool.sh
   - chmod 755 ./travis-tool.sh
-  - ./travis-tool.sh install_aptget r-cran-rmpi
+  - ./travis-tool.sh bootstrap
+  - ./travis-tool.sh install_r rmpi
+  # - ./travis-tool.sh install_aptget r-cran-rmpi
 
 env:
   global: 
